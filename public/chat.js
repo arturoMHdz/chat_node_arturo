@@ -1,5 +1,5 @@
 // Conexión con el servidor Socket.IO
-var socket = io.connect('http://localhost:4000');
+var socket = io.connect();
 
 // Obtener elementos del HTML
 var persona = document.getElementById('persona'),
