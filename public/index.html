@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Práctica de evaluación Socket</title>
+
+    <!-- Archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Socket.IO -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js"></script>
+</head>
+
+<body>
+
+    <!-- Panel de bienvenida -->
+    <div id="panel-bienvenida">
+        <h2>
+            Práctica de evaluación usando sockets de comunicación -
+            Arturo Martínez Hernández
+        </h2>
+
+        <input
+            id="persona"
+            type="text"
+            placeholder="Ingresa tu nombre"
+        >
+
+        <button id="ingresar" onclick="ingresarChat()">
+            Entrar al chat
+        </button>
+    </div>
+
+    <!-- Aplicación del chat -->
+    <div id="app-chat" style="display: none;">
+
+        <h2>Práctica de evaluación 1er parcial</h2>
+
+        <h2 class="nube-box">
+            Chat con Socket.IO
+        </h2>
+
+        <!-- Ventana de mensajes -->
+        <div id="ventana-mensajes">
+
+            <div id="output"></div>
+
+            <div id="escribiendo-mensaje"></div>
+
+        </div>
+
+        <!-- Usuario -->
+        <input
+            id="usuario"
+            type="text"
+            placeholder="Ingresa tu nombre"
+        >
+
+        <!-- Mensaje -->
+        <input
+            type="text"
+            id="message-input"
+            placeholder="Escribe tu mensaje..."
+        >
+
+        <button id="enviar">
+            Enviar
+        </button>
+        
+        <input type="file" id="archivo" accept="image/*,video/*,.pdf,.doc,.docx,.xls,.xlsx,.txt">
+
+            <button id="enviar-archivo">
+            📎 Adjuntar archivo
+            </button>
+    </div>
+
+    <!-- JavaScript de la aplicación -->
+     <audio id="audio" src="sonido.mp3" preload="auto"></audio>
+    <script src="chat.js"></script>
+
+</body>
+</html>
+

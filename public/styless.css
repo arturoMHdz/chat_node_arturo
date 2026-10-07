@@ -1,0 +1,155 @@
+
+body {
+    font-family: Nunito, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+/* Títulos */
+h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+/* Panel de bienvenida */
+#panel-bienvenida {
+    padding: 20% 20%;
+    background: #33ab79;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Nombre del usuario */
+#usuario {
+    color: #DE9631;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+}
+
+#persona {
+    border: 1px solid #ddd;
+}
+
+/* Aplicación del chat */
+#app-chat {
+    border: 1px solid #ddd;
+    max-width: 600px;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.05);
+    background: #fff;
+}
+
+/* Ventana de mensajes */
+#ventana-mensajes {
+    height: 400px;
+    overflow-y: auto;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+/* Mensajes */
+#output {
+    padding: 14px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #555;
+}
+
+/* Cuando el usuario está escribiendo */
+#escribiendo-mensaje {
+    color: #aaa;
+    margin: 0 20px;
+    padding: 14px 0;
+}
+
+/* Nombre del usuario en el chat */
+#output strong {
+    color: #33ab79;
+}
+
+/* Etiquetas */
+label {
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+}
+
+/* Campos de texto */
+input {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 0;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    font-family: Nunito, Arial, sans-serif;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+/* Botones */
+button {
+    background: #33ab79;
+    color: #fff;
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-color: #2e6da4;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #2e6da4;
+    color: #fff;
+}
+
+/* Burbuja de mensaje */
+.nube {
+    background-color: #33ab79;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #B2B2B2;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+    vertical-align: top;
+    color: #fff;
+    font-family: 'Trebuchet MS',
+                 'Lucida Sans Unicode',
+                 'Lucida Grande',
+                 sans-serif;
+}
+
+/* Pico de la burbuja */
+.nube::before {
+    background-color: #33ab79;
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    transform: rotate(29deg) skew(-35deg);
+    width: 20px;
+}
+
+/* Compatibilidad con navegadores antiguos */
+.box {
+    float: right;
+    margin: 5px 45px 5px 20px;
+}
+
+.box::before {
+    box-shadow: -2px 2px 2px 0 rgba(178, 178, 178, 0.4);
+}
